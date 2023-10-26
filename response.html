@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Письмо тебе</title>
+    <style>
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666 ;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666 ;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: #fff;
+            animation: twinkle 3s infinite;
+        }
+
+        .romantic-container {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 80%;
+            margin: 0 auto 20px;
+            text-indent: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .yellow-text {
+            color: #CC6666 ;
+        }
+
+        .button {
+            background-color: #CC6666 ;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ffeb8c;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .rose {
+            width: 150px; 
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+        #widget {
+        position: fixed;
+        top: 10px; /* Регулируйте это значение для желаемого верхнего отступа */
+        right: 10px; /* Регулируйте это значение для желаемого правого отступа */
+        z-index: 2; /* Убедитесь, что z-index выше, чем у фона со звёздами */
+        }
+
+
+.clock {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 60s linear infinite;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  background-color: #000;
+  transform-origin: center left;
+}
+
+.hour-hand {
+  width: 2px;
+  height: 20px;
+  top: 15px;
+  left: 24px;
+  animation: rotate 3600s steps(360) infinite;
+}
+
+.minute-hand {
+  width: 2px;
+  height: 25px;
+  top: 12.5px;
+  left: 24px;
+  animation: rotate 60s steps(60) infinite;
+}
+
+.second-hand {
+  width: 2px;
+  height: 28px;
+  top: 11px;
+  left: 24px;
+  background-color: #ff0000;
+  animation: rotate 1s steps(1) infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <!-- JavaScript-код для создания звезд -->
+    </div>
+    <div class="romantic-container">
+        <!-- Добавьте это внутри вашего body-элемента -->
+        <form action="https://formspree.io/f/xpzgboko"
+        method="POST">      
+            <!-- <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" /> -->
+            <textarea name="text" class="feedback-input" placeholder="для Йерасыла..."></textarea>
+            <input type="submit" value="SEND"/>
+          </form>
+
+
+    </div>
+
+    <div id="widget">
+        <a href="copy.html">
+          <div class="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+          </div>
+        </a>
+      </div>
+    <div class="footer">
+        <p>Inspiring the world with your grace.</p>
+    </div>
+
+    <script>
+        const starsContainer = document.querySelector(".stars");
+
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDelay = `${Math.random() * 3}s`;
+            starsContainer.appendChild(star);
+        }
+
+
+    </script>
+</body>
+</html>
