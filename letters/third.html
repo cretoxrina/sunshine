@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Письмо тебе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: #fff;
+            animation: twinkle 3s infinite;
+        }
+
+        .romantic-container {
+            color: #fff;
+            /* text-align: center; */
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            /* max-width: 80%; */
+            margin: 0 auto 20px;
+            text-indent: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .yellow-text {
+            color: #CC6666 ;
+        }
+
+        .button {
+            background-color: #CC6666 ;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ffeb8c;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .rose {
+            width: 150px; 
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+        #widget {
+        position: fixed;
+        top: 10px; /* Регулируйте это значение для желаемого верхнего отступа */
+        right: 10px; /* Регулируйте это значение для желаемого правого отступа */
+        z-index: 2; /* Убедитесь, что z-index выше, чем у фона со звёздами */
+        }
+
+
+.clock {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 60s linear infinite;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  background-color: #000;
+  transform-origin: center left;
+}
+
+.hour-hand {
+  width: 2px;
+  height: 20px;
+  top: 15px;
+  left: 24px;
+  animation: rotate 3600s steps(360) infinite;
+}
+
+.minute-hand {
+  width: 2px;
+  height: 25px;
+  top: 12.5px;
+  left: 24px;
+  animation: rotate 60s steps(60) infinite;
+}
+
+.second-hand {
+  width: 2px;
+  height: 28px;
+  top: 11px;
+  left: 24px;
+  background-color: #ff0000;
+  animation: rotate 1s steps(1) infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="stars">
+    </div>
+    <div class="romantic-container">
+        <!-- <div class="rose-container">
+            <img src="1.png" alt="Роза" class="rose">
+        </div> -->
+        <p>
+            Смешение американских ванильных фильмов и заблуждений, которые у меня раньше были, вызывало у меня странное воображение. Я думал, что, если я буду не похож на всех остальных, то моя жизнь станет чем-то особенным, полной захватывающих приключений и испытаний. Однако я упускал из виду неповторимость собственного пути.
+         </p>
+       
+    
+         <p>
+            Со временем я начал мечтать о возможности начать сначала, не совсем с нуля, но с того момента, когда я встретил тебя. Первый опыт всегда особенен, независимо от его исхода. У меня был опыт влечения, как взаимного, так и неотвеченного (я не уверен насчет "взаимного влечения" Джессика Альба). Я мог не понимать, что это такое, но эти переживания оставили свой след. Они задевали мою душу.
+            </p>
+        <p>
+            Встреча с тобой пробудила во мне это чувство. Оно было необычным. Я долго думал о тебе, и забыл, каково это чувство спокойного и рационального мышления. Если наркоману лишить дозы, он будет чувствовать, что что-то ему не хватает, даже если он не поймет, чего именно.
+        </p>
+        <p>
+            Если бы у меня была возможность вернуться назад, я стал бы обычным парнем, с которым все дружат. Обычным и свободным, потому что обычным людям всегда везет. Их выбор без особых последствий. Я осознал, что мое действия напоминали поведение ребенка, и теперь понимаю, что это было обусловлено предвзятостью моего возраста. Вместо того, чтобы взросло рассматривать свои действия, я вел себя исходя из своей юности, и это повлияло на мои решения. И теперь мне придется тягаться с этим.
+        </p>
+    </div>
+   
+    </div>
+
+    <div id="widget">
+        <a href="copy.html">
+          <div class="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+          </div>
+        </a>
+      </div>
+
+
+    <div class="footer">
+        <p>Inspiring the world with your grace.</p>
+    </div>
+
+    <script>
+        const starsContainer = document.querySelector(".stars");
+
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDelay = `${Math.random() * 3}s`;
+            starsContainer.appendChild(star);
+        }
+
+
+    </script>
+</body>
+</html>
